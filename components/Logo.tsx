@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styled from 'styled-components'
-import logo from 'public/s-auth.png'
+import logo from 'public/S-auth.png'
 
 const LogoContainer = styled.div`
   position: relative;
