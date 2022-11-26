@@ -105,13 +105,13 @@ const Navigation = ({ indexPage }: NavigationProps) => {
         <Logo />
         <MenuContainer>
           <MenuItem active={indexPage === 0} >
-            <Link href="/" scroll={false}> HOME </Link>
+            <Link href="#home" scroll={false}> HOME </Link>
           </MenuItem>
           <MenuItem active={indexPage === 6} >
-            <Link href="/" scroll={false}>ROADMAP</Link>
+            <Link href="#roadmap" scroll={true}>ROADMAP</Link>
           </MenuItem>
           <MenuItem >
-            <Link href="/" target="_blank">TEAM</Link>
+            <Link href="#team" >TEAM</Link>
           </MenuItem>
           <MenuItem onClick={() => setIsContactOpen(true)} >
             CONTACT

@@ -1,6 +1,6 @@
 import Navigation from "../../../components/Navigation";
 import { useState } from "react";
-import HomeImage from "./homeImage";
+import RoadImage from "./roadImage";
 import styled from "styled-components";
 import footerPic from 'public/images/home/footer.png'
 import Image from "next/image";
@@ -48,15 +48,13 @@ const Home = () => {
     const [current, setCurrent] = useState(0)
     return (
         <>
-            <HomeContainer id="home">
+            <HomeContainer id="roadmap">
                 <Navigation indexPage={current}></Navigation>
                 <ImageContainer>
-                    <HomeImage></HomeImage>
+                    <RoadImage></RoadImage>
                 </ImageContainer>
                 <SocialMedia></SocialMedia>
-                <FooterContainer>
-                    <Image src={footerPic} alt="footer" />
-                </FooterContainer>
+                
             </HomeContainer>
 
         </>

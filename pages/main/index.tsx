@@ -1,6 +1,7 @@
 import Navigation from '../../components/Navigation'
 import Home from './components/home'
-import RoadMap from './components/roadmap'
+import HomeMap from './components/homeMap'
+import Team from './components/team'
 import { useState } from 'react'
 
 const Main = () => {
@@ -8,7 +9,8 @@ const Main = () => {
   return <>
     <Navigation indexPage={current}></Navigation>
     <Home></Home>
-    <RoadMap></RoadMap>
+    <HomeMap></HomeMap>
+    <Team></Team>
   </>
 }
 

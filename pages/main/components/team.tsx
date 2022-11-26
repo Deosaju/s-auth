@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Image from "next/image"
 
-import banner from "public/images/roadmap/Roadmap.png"
+import banner from "public/images/team.png"
 
 const Banner = styled.div`
   position: absolute;
@@ -17,14 +17,14 @@ const Container = styled.div`
   width: 100%;
 `
 
-const HomeImage = () => {
+const TeamImage = () => {
 
   return <Container>
-    <Banner>
+    <Banner id="team">
       <Image src={banner} alt="logo" layout="fill" objectFit="contain"/>
     </Banner>
   </Container>
 
 }
 
-export default HomeImage
+export default TeamImage
