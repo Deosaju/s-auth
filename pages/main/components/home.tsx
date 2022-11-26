@@ -2,6 +2,9 @@ import Navigation from "../../../components/Navigation";
 import { useState } from "react";
 import HomeImage from "./homeImage";
 import styled from "styled-components";
+import footerPic from 'public/images/home/footer.png'
+import Image from "next/image";
+import SocialMedia from "../../../components/SocialMedia";
 
 const ImageContainer = styled.div`
   position: relative;
@@ -28,11 +31,16 @@ const HomeContainer = styled.div`
   background-repeat: no-repeat;
   overflow: hidden;
   background-color: #0F0F0F;
-  ${({ theme }) => theme.sm} {
-    position: relative;
-    height: auto;
-    display: block;
-  }
+`
+const FooterContainer = styled(ImageContainer)`
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 30px;
+  width: 100%;
+  height: 40px;
+  padding-left: 2px;
+  
 `
 
 const Home = () => {
@@ -45,6 +53,10 @@ const Home = () => {
                 <ImageContainer>
                     <HomeImage></HomeImage>
                 </ImageContainer>
+                <SocialMedia></SocialMedia>
+                <FooterContainer>
+                    <Image src={footerPic} alt="footer" />
+                </FooterContainer>
             </HomeContainer>
 
         </>
